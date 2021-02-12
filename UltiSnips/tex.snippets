@@ -46,6 +46,22 @@ snippet beg "begin{} / end{}" bA
 \\end{$1}
 endsnippet
 
+snippet defi "definition box" bA
+\\begin{defi}
+	$0
+\\end{defi}
+endsnippet
+
+snippet tikz "centered tikz figure" bA
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+	$0
+\end{tikzpicture}
+\caption{$1}
+\end{figure}
+endsnippet
+
 priority 100
 snippet ... "ldots" iA
 \ldots
